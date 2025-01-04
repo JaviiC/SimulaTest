@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="525.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.RegistrarPreguntaController">
+   <children>
+      <VBox layoutX="308.0" layoutY="74.0" prefHeight="380.0" prefWidth="850.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="1183.0" text="NUEVA PREGUNTA">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="65.0" right="65.0" />
+               </VBox.margin>
+            </Separator>
+            <TextField fx:id="textFieldPregunta" promptText="Introduce una pregunta">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="18.0" left="50.0" right="50.0" top="18.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="850.0">
+               <children>
+                  <Label text="a.">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldOpcion1" focusTraversable="false" prefHeight="30.0" prefWidth="650.0" promptText="Opción 1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <RadioButton fx:id="rb1" focusTraversable="false" mnemonicParsing="false" selected="true">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="questionGroup" />
+                     </toggleGroup>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="68.0" right="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="609.0">
+               <children>
+                  <Label text="b.">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldOpcion2" focusTraversable="false" prefHeight="30.0" prefWidth="650.0" promptText="Opción 2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="18.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <RadioButton fx:id="rb2" focusTraversable="false" mnemonicParsing="false" toggleGroup="$questionGroup" />
+               </children>
+               <VBox.margin>
+                  <Insets left="68.0" right="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="609.0">
+               <children>
+                  <Label text="c.">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldOpcion3" focusTraversable="false" prefHeight="30.0" prefWidth="650.0" promptText="Opción 3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <RadioButton fx:id="rb3" focusTraversable="false" mnemonicParsing="false" toggleGroup="$questionGroup" />
+               </children>
+               <VBox.margin>
+                  <Insets left="68.0" right="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="609.0">
+               <children>
+                  <Label text="d.">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldOpcion4" focusTraversable="false" prefHeight="30.0" prefWidth="650.0" promptText="Opción 4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="18.0" right="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <RadioButton fx:id="rb4" focusTraversable="false" mnemonicParsing="false" toggleGroup="$questionGroup" />
+               </children>
+               <VBox.margin>
+                  <Insets left="68.0" right="50.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="65.0" right="65.0" top="15.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="850.0">
+               <children>
+                  <Button fx:id="buttonGuardar" focusTraversable="false" mnemonicParsing="false" onAction="#onGuardarClick" text="Guardar pregunta">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="12.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

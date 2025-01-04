@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="380.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.MainController">
+   <children>
+      <VBox layoutX="358.0" layoutY="160.0" prefHeight="540.0" prefWidth="850.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="1100.0" text="SIMULACROS DE EXAMEN TIPO TEST">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefWidth="200.0">
+               <padding>
+                  <Insets left="65.0" right="65.0" />
+               </padding>
+            </Separator>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="850.0" spacing="94.0">
+               <VBox.margin>
+                  <Insets top="52.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="buttonNuevaPregunta" focusTraversable="false" mnemonicParsing="false" onAction="#onNuevaPreguntaClick" prefWidth="200.0" text="Nueva Pregunta">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonVisualizarPreguntas" focusTraversable="false" mnemonicParsing="false" onAction="#onVisualizarPreguntasClick" prefWidth="200.0" text="Visualizar Preguntas">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="850.0">
+               <children>
+                  <Button fx:id="buttonIniciarSimulacro" focusTraversable="false" mnemonicParsing="false" onAction="#onIniciarSimulacroClick" prefWidth="200.0" text="INICIAR SIMULACRO">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="45.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
