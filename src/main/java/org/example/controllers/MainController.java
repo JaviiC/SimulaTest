@@ -17,8 +17,8 @@ public class MainController {
     }
 
     @FXML
-    public void onVisualizarPreguntasClick(){
-        FileManager.visualizarPreguntas();
+    public void onGestionarPreguntasClick(){
+        // Funcionalidad para eliminar preguntas
     }
 
     @FXML

@@ -51,13 +51,13 @@ public class CorreccionController {
 
         for (int i = 1; i <= SOLUCIONES.size(); i++) {
             if (RESPUESTAS_SELECCIONADAS.get(i) == null) {
-                System.out.println("Pregunta " + i + " --> NaN");
+                LOG.info("Pregunta " + i + " --> NaN");
                 sinContestar++;
             }else if(RESPUESTAS_SELECCIONADAS.get(i).equals(SOLUCIONES.get(i))) {
-                System.out.println("Pregunta " + i + " --> OK");
+                LOG.info("Pregunta " + i + " --> OK");
                 aciertos++;
             } else{
-                System.out.println("Pregunta " + i + " --> X");
+                LOG.info("Pregunta " + i + " --> X");
                 fallos++;
             }
         }

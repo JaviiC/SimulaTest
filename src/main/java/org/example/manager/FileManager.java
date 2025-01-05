@@ -77,11 +77,4 @@ public class FileManager {
         return preguntasList;
     }
 
-    public static void visualizarPreguntas() {
-        System.out.println("Visualizando " + preguntasList.size() + " preguntas:");
-        for(Pregunta p : preguntasList){
-            System.out.println(p);
-        }
-    }
-
 }
