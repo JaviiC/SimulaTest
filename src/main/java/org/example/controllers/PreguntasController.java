@@ -31,8 +31,8 @@ public class PreguntasController {
 
     private static Map<Integer, Byte> soluciones;
     private static Map<Integer, Byte> respuestasSeleccionadas;
+    private static List<Pregunta> listaPreguntas;
 
-    private List<Pregunta> listaPreguntas;
     private int indicePreguntaActual = 0;
 
     public void initialize() {
@@ -77,6 +77,45 @@ public class PreguntasController {
         labelNumeroPregunta.setText(String.format("%d/%d",indicePreguntaActual + 1, listaPreguntas.size()));
 
         cargarRadioButton(indice);
+    }
+
+    private void cargarRadioButton(int indice){
+
+        Byte respuesta = respuestasSeleccionadas.get(indice+1);
+
+        if (respuesta == null){
+            rb1.setSelected(false);
+            rb2.setSelected(false);
+            rb3.setSelected(false);
+            rb4.setSelected(false);
+        } else {
+            switch (respuesta) {
+                case 1 -> {
+                    rb1.setSelected(true);
+                    rb2.setSelected(false);
+                    rb3.setSelected(false);
+                    rb4.setSelected(false);
+                }
+                case 2 -> {
+                    rb1.setSelected(false);
+                    rb2.setSelected(true);
+                    rb3.setSelected(false);
+                    rb4.setSelected(false);
+                }
+                case 3 -> {
+                    rb1.setSelected(false);
+                    rb2.setSelected(false);
+                    rb3.setSelected(true);
+                    rb4.setSelected(false);
+                }
+                case 4 -> {
+                    rb1.setSelected(false);
+                    rb2.setSelected(false);
+                    rb3.setSelected(false);
+                    rb4.setSelected(true);
+                }
+            }
+        }
     }
 
     private void cargarOpcionesEnLabels(Map<Byte, String> opciones, Label labelOpcion1, Label labelOpcion2, Label labelOpcion3, Label labelOpcion4) {
@@ -153,45 +192,6 @@ public class PreguntasController {
         throw new NullPointerException("Se ha producido un error al obtener la Clave en la posición " + antiguaPosicionCorrecta);
     }
 
-    private void cargarRadioButton(int indice){
-
-        Byte respuesta = respuestasSeleccionadas.get(indice+1);
-
-        if (respuesta == null){
-            rb1.setSelected(false);
-            rb2.setSelected(false);
-            rb3.setSelected(false);
-            rb4.setSelected(false);
-        } else {
-            switch (respuesta) {
-                case 1 -> {
-                    rb1.setSelected(true);
-                    rb2.setSelected(false);
-                    rb3.setSelected(false);
-                    rb4.setSelected(false);
-                }
-                case 2 -> {
-                    rb1.setSelected(false);
-                    rb2.setSelected(true);
-                    rb3.setSelected(false);
-                    rb4.setSelected(false);
-                }
-                case 3 -> {
-                    rb1.setSelected(false);
-                    rb2.setSelected(false);
-                    rb3.setSelected(true);
-                    rb4.setSelected(false);
-                }
-                case 4 -> {
-                    rb1.setSelected(false);
-                    rb2.setSelected(false);
-                    rb3.setSelected(false);
-                    rb4.setSelected(true);
-                }
-            }
-        }
-    }
-
     private void controlDeBotones() {
         botonAnterior.setDisable(indicePreguntaActual == 0); // En caso de ser True (primera pregunta) se desabilita
         if (indicePreguntaActual == listaPreguntas.size()-1)
@@ -231,6 +231,10 @@ public class PreguntasController {
         return respuestasSeleccionadas;
     }
 
+    public static List<Pregunta> getListaPreguntas(){
+        return listaPreguntas;
+    }
+
     @FXML
     public void onSiguienteClick() {
 
@@ -239,7 +243,6 @@ public class PreguntasController {
         if (indicePreguntaActual < listaPreguntas.size() - 1) {
 
             respuestasSeleccionadas.put(indicePreguntaActual + 1, obtenerRespuestaSeleccionada());
-
 
             indicePreguntaActual++;
 

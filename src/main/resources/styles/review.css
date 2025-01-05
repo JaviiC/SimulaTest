@@ -1,0 +1,14 @@
+.correcta {
+    -fx-background-color: rgba(0, 128, 0, 0.4); /* Verde más translúcido */
+    -fx-text-fill: white;
+}
+
+.incorrecta {
+    -fx-background-color: rgba(255, 0, 0, 0.4); /* Rojo más translúcido */
+    -fx-text-fill: white;
+}
+
+.no-contestada {
+    -fx-background-color: rgba(255, 255, 0, 0.4); /* Amarillo translúcido */
+    -fx-text-fill: black; /* Texto en negro para contraste */
+}

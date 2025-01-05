@@ -25,7 +25,7 @@ public class MainController {
     public void onIniciarSimulacroClick(){
         if(!FileManager.getPreguntasList().isEmpty())
             // Redirige al Simulacro de todas las Preguntas Registradas
-            WindowManager.showWindow("SIMULACROS | Simulacro", "/fxml/preguntacontroller.fxml", "/styles/main.css", 850, 375);
+            WindowManager.showWindow("SIMULACROS | Simulacro", "/fxml/preguntascontroller.fxml", "/styles/main.css", 850, 375);
     }
 
 }

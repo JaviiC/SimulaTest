@@ -4,9 +4,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import org.example.manager.WindowManager;
+import org.example.simulacro.Pregunta;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
 import java.util.Map;
 
 public class CorreccionController {
@@ -18,6 +20,8 @@ public class CorreccionController {
 
     private final Map<Integer, Byte> SOLUCIONES = PreguntasController.getSoluciones();
 
+    private final List<Pregunta> LISTA_PREGUNTAS = PreguntasController.getListaPreguntas();
+
     private final int PREGUNTAS_TOTALES = SOLUCIONES.size();
 
     private double puntuacionTotal = 0.0, aciertos = 0.0, fallos = 0.0, sinContestar = 0.0;
@@ -26,7 +30,7 @@ public class CorreccionController {
     Label labelAciertos, labelTotal, labelPuntuacion;
 
     @FXML
-    Button buttonAceptar;
+    Button botonAceptar, botonRevisar;
 
     public void initialize(){
 
@@ -60,14 +64,28 @@ public class CorreccionController {
         puntuacionTotal = aciertos / PREGUNTAS_TOTALES * 10.0;
     }
 
+    public Map<Integer, Byte> getRESPUESTAS_SELECCIONADAS() {
+        return RESPUESTAS_SELECCIONADAS;
+    }
+
+    public Map<Integer, Byte> getSOLUCIONES() {
+        return SOLUCIONES;
+    }
+
+    public List<Pregunta> getLISTA_PREGUNTAS() {
+        return LISTA_PREGUNTAS;
+    }
+
     @FXML
     public void onAceptarClick(){
+        LOG.debug("Se ha pulsado el botón 'Aceptar'");
         WindowManager.showWindow("SIMULACROS | Home", "/fxml/maincontroller.fxml", "/styles/main.css", 850, 380);
     }
 
     @FXML
     public void onRevisarClick(){
-        // Hacer alguna ventana de revisión
+        LOG.debug("Se ha pulsado el botón 'Revisar'");
+        WindowManager.showWindow("SIMULACROS | Home", "/fxml/revisioncontroller.fxml", "/styles/review.css", 850, 380);
     }
 
 }

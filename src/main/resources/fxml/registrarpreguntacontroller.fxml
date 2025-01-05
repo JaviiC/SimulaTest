@@ -37,7 +37,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="textFieldOpcion1" focusTraversable="false" prefHeight="30.0" prefWidth="650.0" promptText="Opción 1">
+                  <TextField fx:id="textFieldOpcion1" prefHeight="30.0" prefWidth="650.0" promptText="Opción 1">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -62,7 +62,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="textFieldOpcion2" focusTraversable="false" prefHeight="30.0" prefWidth="650.0" promptText="Opción 2">
+                  <TextField fx:id="textFieldOpcion2" prefHeight="30.0" prefWidth="650.0" promptText="Opción 2">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -83,7 +83,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="textFieldOpcion3" focusTraversable="false" prefHeight="30.0" prefWidth="650.0" promptText="Opción 3">
+                  <TextField fx:id="textFieldOpcion3" prefHeight="30.0" prefWidth="650.0" promptText="Opción 3">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -104,7 +104,7 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="textFieldOpcion4" focusTraversable="false" prefHeight="30.0" prefWidth="650.0" promptText="Opción 4">
+                  <TextField fx:id="textFieldOpcion4" prefHeight="30.0" prefWidth="650.0" promptText="Opción 4">
                      <font>
                         <Font size="14.0" />
                      </font>
