@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="375.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.EliminacionController">
+    <children>
+        <VBox layoutX="208.0" layoutY="14.0" prefHeight="380.0" prefWidth="850.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="labelEnunciado" prefHeight="18.0" prefWidth="1043.0" text="Enunciado de la pregunta">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="15.0" left="40.0" right="40.0" top="40.0" />
+                    </VBox.margin>
+                </Label>
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="65.0" right="65.0" />
+                    </VBox.margin>
+                </Separator>
+                <HBox fx:id="hBox1" alignment="CENTER" prefHeight="0.0" prefWidth="850.0" spacing="15.0">
+                    <children>
+                        <Label text="a.">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="labelOpcion1" prefHeight="18.0" prefWidth="670.0" text="Opción 1...">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                        <RadioButton fx:id="rb1" disable="true" focusTraversable="false" mnemonicParsing="false">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="grupoBotones" />
+                            </toggleGroup>
+                        </RadioButton>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="45.0" right="65.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox fx:id="hBox2" alignment="CENTER" prefHeight="0.0" prefWidth="850.0" spacing="15.0">
+                    <children>
+                        <Label text="b.">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="labelOpcion2" prefHeight="18.0" prefWidth="670.0" text="Opción 2...">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <RadioButton fx:id="rb2" disable="true" focusTraversable="false" mnemonicParsing="false" toggleGroup="$grupoBotones" />
+                    </children>
+                    <VBox.margin>
+                        <Insets left="45.0" right="65.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox fx:id="hBox3" alignment="CENTER" prefHeight="0.0" prefWidth="850.0" spacing="15.0">
+                    <children>
+                        <Label text="c.">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="labelOpcion3" prefHeight="18.0" prefWidth="670.0" text="Opción 3...">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="2.0" />
+                            </HBox.margin>
+                        </Label>
+                        <RadioButton fx:id="rb3" disable="true" focusTraversable="false" mnemonicParsing="false" toggleGroup="$grupoBotones" />
+                    </children>
+                    <VBox.margin>
+                        <Insets left="45.0" right="65.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox fx:id="hBox4" alignment="CENTER" prefHeight="0.0" prefWidth="850.0" spacing="15.0">
+                    <children>
+                        <Label text="d.">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="labelOpcion4" prefHeight="18.0" prefWidth="670.0" text="Opción4...">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <RadioButton fx:id="rb4" disable="true" focusTraversable="false" mnemonicParsing="false" toggleGroup="$grupoBotones" />
+                    </children>
+                    <VBox.margin>
+                        <Insets left="45.0" right="65.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="874.0" spacing="80.0">
+                    <children>
+                        <Button fx:id="botonCancelar" focusTraversable="false" mnemonicParsing="false" onAction="#onCancelarClick" text="Cancelar">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="botonEliminar" focusTraversable="false" mnemonicParsing="false" onAction="#onEliminarClick" text="ELIMINAR PREGUNTA">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+               <padding>
+                  <Insets right="55.0" />
+               </padding>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
