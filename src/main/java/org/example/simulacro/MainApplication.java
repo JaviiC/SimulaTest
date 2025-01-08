@@ -24,7 +24,7 @@ public class MainApplication extends Application {
             System.exit(0);
         }
         WindowManager.setStage(stage);
-        WindowManager.showWindow("SIMULACROS | Home", "/fxml/maincontroller.fxml", "/styles/main.css", 850, 380);
+        WindowManager.showWindow("SIMULATEST | Home", "/fxml/maincontroller.fxml", "/styles/main.css", 850, 380);
     }
 
     @Override

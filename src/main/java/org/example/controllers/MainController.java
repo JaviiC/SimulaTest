@@ -12,20 +12,27 @@ public class MainController {
 
     @FXML
     public void onNuevaPreguntaClick(){
+        LOG.trace("Se ha pulsado el botón de 'Nueva Pregunta'");
+
         // Redirige a la ventana de implementación de una Nueva Pregunta
-        WindowManager.showWindow("SIMULACROS | Nueva Pregunta", "/fxml/registrarpreguntacontroller.fxml", "/styles/main.css", 850, 525);
+        WindowManager.showWindow("SIMULATEST | Nueva Pregunta", "/fxml/registrarpreguntacontroller.fxml", "/styles/main.css", 850, 525);
     }
 
     @FXML
     public void onGestionarPreguntasClick(){
-        // Funcionalidad para eliminar preguntas
+        LOG.trace("Se ha pulsado el botón de 'Gestión de Preguntas'");
+
+        // Redirige a la ventana de eliminación de Preguntas
+        WindowManager.showWindow("SIMULATEST | Preguntas", "/fxml/gestiondepreguntascontroller.fxml", "/styles/main.css", 780, 560);
     }
 
     @FXML
     public void onIniciarSimulacroClick(){
+        LOG.trace("Se ha pulsado el botón de 'Inicio de Simulacro'");
+
         if(!FileManager.getPreguntasList().isEmpty())
             // Redirige al Simulacro de todas las Preguntas Registradas
-            WindowManager.showWindow("SIMULACROS | Simulacro", "/fxml/preguntascontroller.fxml", "/styles/main.css", 850, 375);
+            WindowManager.showWindow("SIMULATEST | Simulacro", "/fxml/preguntascontroller.fxml", "/styles/main.css", 850, 375);
     }
 
 }

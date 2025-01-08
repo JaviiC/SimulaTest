@@ -52,7 +52,7 @@ public class RegistrarPreguntaController {
 
             FileManager.guardarPregunta(pregunta);
 
-            WindowManager.showWindow("SIMULACROS | Home", "/fxml/maincontroller.fxml", "/styles/main.css", 850, 380);
+            WindowManager.showWindow("SIMULATEST | Home", "/fxml/maincontroller.fxml", "/styles/main.css", 850, 380);
 
         } else {
             // Informar de que hay que rellenar TODOS los campos

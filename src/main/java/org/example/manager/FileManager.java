@@ -77,4 +77,15 @@ public class FileManager {
         return preguntasList;
     }
 
+    public static void eliminarPregunta(int idPregunta) {
+
+        LOG.debug("Procediendo a eliminar la pregunta [{}]", idPregunta);
+        if(preguntasList.size() < idPregunta){
+            LOG.warn("Error al eliminar, la pregunta [{}] no existe...", idPregunta);
+            return;
+        }
+
+        LOG.info("Pregunta [{}] ELIMINADA", preguntasList.get(idPregunta-1));
+        preguntasList.remove(idPregunta-1);
+    }
 }

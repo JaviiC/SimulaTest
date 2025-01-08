@@ -219,7 +219,7 @@ public class PreguntasController {
 
     private void correccionDeSimulacro() {
         LOG.debug("Procediendo a la corrección del simulacro...");
-        WindowManager.showWindow("SIMULACROS | Home", "/fxml/correccioncontroller.fxml", "/styles/main.css", 725, 365);
+        WindowManager.showWindow("SIMULATEST | Corrección", "/fxml/correccioncontroller.fxml", "/styles/main.css", 725, 365);
 
     }
 
