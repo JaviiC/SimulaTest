@@ -1,15 +1,15 @@
 # 🌟 SimulaTest
 
-**SimulaTest** es una poderosa herramienta para realizar simulaciones y pruebas automatizadas de alta calidad. Diseñada para desarrolladores y testers, SimulaTest te permite optimizar y mejorar procesos, reduciendo errores y aumentando la eficiencia.
+**SimulaTest** es una herramienta diseñada para crear, gestionar y ejecutar simulacros de tipo TEST, ideal para estudiantes, opositores o cualquier persona que desee prepararse para exámenes y evaluaciones. Con SimulaTest puedes optimizar tu preparación y evaluar tu progreso de manera eficiente.
 
 ---
 
 ## 🚀 Características principales
 
-- 🔧 **Automatización de pruebas**: Configura pruebas de forma sencilla.
-- 📊 **Análisis detallado**: Obtén reportes claros y procesables.
-- ⚡ **Alta eficiencia**: Rápido y confiable incluso en grandes proyectos.
-- 🖥️ **Interfaz amigable**: Ideal para expertos y principiantes.
+- 📝 **Crea simulacros personalizados**: Diseña tests adaptados a tus necesidades.
+- 📊 **Análisis detallado**: Obtén reportes claros de tus resultados y progreso.
+- ⏱️ **Simulación en tiempo real**: Practica bajo condiciones similares a las de un examen oficial.
+- 🖥️ **Interfaz amigable**: Ideal para estudiantes de todos los niveles.
 
 ---
 
