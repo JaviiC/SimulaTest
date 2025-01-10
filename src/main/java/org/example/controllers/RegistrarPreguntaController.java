@@ -25,7 +25,15 @@ public class RegistrarPreguntaController {
     RadioButton rb1, rb2, rb3, rb4; // IDs
 
     @FXML
-    Button buttonGuardar;
+    Button botonCancelar, botonGuardar;
+
+    @FXML
+    public void onCancelarClick(){
+
+        LOG.info("Se ha pulsado el botón de 'Cancelar'");
+
+        WindowManager.showWindow("SIMULATEST | Home", "/fxml/maincontroller.fxml", "/styles/main.css", 850, 380);
+    }
 
     @FXML
     public void onGuardarClick(){
