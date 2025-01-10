@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="375.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.PreguntasController">
+<AnchorPane prefHeight="375.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.PreguntasController">
    <children>
       <VBox layoutX="208.0" layoutY="14.0" prefHeight="380.0" prefWidth="850.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="850.0">
+               <children>
+                  <Label fx:id="labelIdPregunta" text="-" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="-50.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
             <Label fx:id="labelEnunciado" prefHeight="18.0" prefWidth="1043.0" text="Enunciado de la pregunta">
                <font>
                   <Font name="System Bold" size="15.0" />

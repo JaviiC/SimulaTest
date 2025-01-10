@@ -33,19 +33,8 @@ public class WindowManager {
         Scene scene;
 
         try {
-
             scene = new Scene(fxmlLoader.load(), width, height);
             scene.getStylesheets().add(MainApplication.class.getResource(cssPath).toExternalForm());
-
-//            scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
-//
-//                @Override
-//                public void handle(KeyEvent event) {
-//                    Object object = fxmlLoader.getController();
-//                    instanceRespectiveWindow(event, object);
-//                }
-//
-//            });
 
             primaryStage.setTitle(title);
             primaryStage.setResizable(false);

@@ -18,7 +18,7 @@ public class PreguntasController {
     private static final Logger LOG = LoggerFactory.getLogger(PreguntasController.class);
 
     @FXML
-    private Label labelEnunciado, labelOpcion1, labelOpcion2, labelOpcion3, labelOpcion4, labelNumeroPregunta;
+    private Label labelEnunciado, labelIdPregunta, labelOpcion1, labelOpcion2, labelOpcion3, labelOpcion4, labelNumeroPregunta;
 
     @FXML
     private ToggleGroup grupoBotones;
@@ -49,7 +49,7 @@ public class PreguntasController {
 
         cargarPregunta(indicePreguntaActual); // Carga la primera pregunta
 
-        controlDeBotones();
+        controlDeBotones(); // Habilita, desabilita y modifica los botones de las pregntas
 
         cargarSoluciones(); // Se carga el mapa de soluciones
     }
@@ -70,6 +70,9 @@ public class PreguntasController {
 
         // Cambia el enunciado de la interfaz
         labelEnunciado.setText(pregunta.getEnunciado());
+
+        int idPregunta = FileManager.getIdPregunta(pregunta);
+        labelIdPregunta.setText("id." + (idPregunta + 1));
 
         Map<Byte, String> opciones = pregunta.getOpciones();
         cargarOpcionesEnLabels(opciones, labelOpcion1, labelOpcion2, labelOpcion3, labelOpcion4);

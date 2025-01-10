@@ -88,4 +88,8 @@ public class FileManager {
         LOG.info("Pregunta [{}] ELIMINADA", preguntasList.get(idPregunta-1));
         preguntasList.remove(idPregunta-1);
     }
+
+    public static int getIdPregunta(Pregunta pregunta) {
+        return preguntasList.indexOf(pregunta);
+    }
 }
