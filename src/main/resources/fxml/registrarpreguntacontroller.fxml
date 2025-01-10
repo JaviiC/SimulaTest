@@ -123,8 +123,13 @@
                   <Insets left="65.0" right="65.0" top="15.0" />
                </VBox.margin>
             </Separator>
-            <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="850.0" spacing="80.0">
+            <HBox alignment="TOP_RIGHT" prefHeight="0.0" prefWidth="850.0" spacing="80.0">
                <children>
+                  <Label fx:id="labelCamposIncompletos" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="353.0" textFill="#c10000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
                   <Button fx:id="botonCancelar" mnemonicParsing="false" onAction="#onCancelarClick" text="Cancelar">
                      <font>
                         <Font size="15.0" />

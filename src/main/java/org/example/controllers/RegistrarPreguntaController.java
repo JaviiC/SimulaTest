@@ -28,6 +28,9 @@ public class RegistrarPreguntaController {
     Button botonCancelar, botonGuardar;
 
     @FXML
+    Label labelCamposIncompletos;
+
+    @FXML
     public void onCancelarClick(){
 
         LOG.info("Se ha pulsado el botón de 'Cancelar'");
@@ -63,7 +66,7 @@ public class RegistrarPreguntaController {
             WindowManager.showWindow("SIMULATEST | Home", "/fxml/maincontroller.fxml", "/styles/main.css", 850, 380);
 
         } else {
-            // Informar de que hay que rellenar TODOS los campos
+            labelCamposIncompletos.setText("Ops! Asegúrate de completar TODOS los campos");
         }
 
     }
