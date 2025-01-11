@@ -20,7 +20,7 @@ Puedes descargar el archivo `.jar` de SimulaTest directamente desde este reposit
 O haz clic en el enlace directo: ➡️ **[Descargar SIMULATEST.jar](./out/artifacts/SIMULATEST_jar/SIMULATEST.jar)**
 
 ### 2️⃣ Requisitos previos
-- **Java 8+**: Asegúrate de tener Java instalado.  
+- **Java 20+**: Asegúrate de tener Java v.20 o más instalado.  
   Descárgalo desde: [https://www.java.com](https://www.java.com)
 
 ### 3️⃣ Ejecutar SimulaTest
